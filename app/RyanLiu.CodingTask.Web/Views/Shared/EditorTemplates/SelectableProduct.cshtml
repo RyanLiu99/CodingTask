@@ -1,0 +1,10 @@
+﻿@model RyanLiu.CodingTask.Web.Models.SelectableProduct
+
+<label class="col-xs-12 col-sm-6 col-lg-4">
+    @Html.CheckBoxFor(m => m.Selected)
+    @Model.Entity.product_code : @Model.Entity.product_name
+    @Html.HiddenFor(m => m.Entity.product_code)
+    @Html.HiddenFor(m => m.Entity.product_name)
+</label>
+
+

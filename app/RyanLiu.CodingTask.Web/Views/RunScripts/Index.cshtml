@@ -1,0 +1,32 @@
+﻿
+@model RyanLiu.CodingTask.Web.Models.RunScriptsViewModel
+
+@using (Html.BeginForm("SaveOutputs", "RunScripts", FormMethod.Post))
+{
+    @Html.AntiForgeryToken()
+
+    @Html.HiddenFor(m => m.RunInstanceId)
+
+    <br />
+    <div class="row top-buffer text-center">
+        <p class="text-info lead">
+            Input files are generated on server at <span class="text-primary"> @Model.Path</span>.
+        </p>
+
+        <p class="text-primary">
+            Please run Scipts, and make sure output files remain in the <span class="text-danger" style="text-transform:uppercase">same directory</span>. Then Save Output Files.
+        </p>
+
+        <div>
+            <input type="submit" class="btn btn-primary" value="Save  Output Files" />
+        </div>
+
+        <br />
+
+        <div class="text-warning">
+            Please note, you need run the script on server.  This is a DEMO. Once full integrated,
+            you can run script by one click
+        </div>
+
+    </div>
+}

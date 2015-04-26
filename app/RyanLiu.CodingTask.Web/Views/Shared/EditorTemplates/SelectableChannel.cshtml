@@ -1,0 +1,11 @@
+﻿
+@model RyanLiu.CodingTask.Web.Models.SelectableChannel
+
+<label class="col-xs-12 col-sm-6 col-lg-4">
+    @Html.CheckBoxFor(m => m.Selected)
+    @Model.Entity.channel_code : @Model.Entity.channel_name
+    @Html.HiddenFor(m => m.Entity.channel_code)
+    @Html.HiddenFor(m => m.Entity.channel_name)
+</label>
+
+

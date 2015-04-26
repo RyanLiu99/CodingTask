@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2013
+VisualStudioVersion = 12.0.31101.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{159641D6-6404-4A2A-AE62-294DE0FE8301}") = "SSISForCodingTask", "SSISForCodingTask\SSISForCodingTask.dtproj", "{278455F3-C07B-4F2F-817A-E2D8807C6D7D}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "OriginalData", "OriginalData", "{4F419CE8-20C4-478F-86F0-30BA05BD7406}"
+	ProjectSection(SolutionItems) = preProject
+		OriginalData\input_channel.csv = OriginalData\input_channel.csv
+		OriginalData\input_geography.csv = OriginalData\input_geography.csv
+		OriginalData\input_product.csv = OriginalData\input_product.csv
+		OriginalData\input_setup.csv = OriginalData\input_setup.csv
+		OriginalData\output_channel.csv = OriginalData\output_channel.csv
+		OriginalData\output_geography.csv = OriginalData\output_geography.csv
+		OriginalData\output_product.csv = OriginalData\output_product.csv
+		OriginalData\output_product_chart.csv = OriginalData\output_product_chart.csv
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Development|Default = Development|Default
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{278455F3-C07B-4F2F-817A-E2D8807C6D7D}.Development|Default.ActiveCfg = Development
+		{278455F3-C07B-4F2F-817A-E2D8807C6D7D}.Development|Default.Build.0 = Development
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

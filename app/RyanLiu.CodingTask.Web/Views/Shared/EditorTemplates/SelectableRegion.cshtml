@@ -1,0 +1,9 @@
+﻿@model RyanLiu.CodingTask.Web.Models.SelectableRegion
+
+<label class="col-xs-12 col-sm-6 col-lg-4">
+    @Html.CheckBoxFor(m => m.Selected)
+    @Model.Entity.region_code : @Model.Entity.region_name
+    @Html.HiddenFor(m => m.Entity.region_code)
+    @Html.HiddenFor(m => m.Entity.region_name)
+</label>
+

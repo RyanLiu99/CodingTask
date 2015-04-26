@@ -1,0 +1,42 @@
+﻿@model RyanLiu.CodingTask.Web.Models.InputsViewModel
+@{
+    ViewBag.Title = "Optimization";
+}
+@using (@Html.BeginForm())
+{
+
+    @Html.AntiForgeryToken()
+
+    @Html.ValidationSummary(false)
+    <section>
+        <h2>Regions</h2>
+        <div class="row">
+            @Html.EditorFor(m => m.Regions)
+        </div>
+    </section>
+    <hr />
+    <section>
+        <h2>Products</h2>
+        <div class="row">
+            @Html.EditorFor(m => m.Products)
+        </div>
+    </section>
+    <hr />
+    <section>
+        <h2>Channels</h2>
+        <div class="row">
+            @Html.EditorFor(m => m.Chanlels)
+        </div>
+    </section>
+    <hr />
+    <section>
+        <h2>Setup</h2>
+        @Html.EditorFor(m => m.Setup)
+    </section>
+
+    <div class="form-group">
+        <div class="col-md-offset-2 col-md-10">
+            <input type="submit" value="Generate Input Files" class="btn btn-primary" />
+        </div>
+    </div>
+}
